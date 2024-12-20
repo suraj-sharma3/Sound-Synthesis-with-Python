@@ -1,1 +1,1 @@
-# Wavetable-Synthesis-with-Python
+# Sound-Synthesis-with-Python
