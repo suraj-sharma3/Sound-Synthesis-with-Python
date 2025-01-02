@@ -22,7 +22,7 @@ def synth(frequency, duration=1.5, sampling_rate=44100):
 
 
 keylist = '123456789qwertyuioasdfghjklzxcvbnm,.'
-notes_file = open("noteslist.txt")
+notes_file = open(r"sound_synthesizer_with_pygame_and_numpy\noteslist.txt")
 file_contents = notes_file.read()
 notes_file.close()
 noteslist = file_contents.splitlines()
