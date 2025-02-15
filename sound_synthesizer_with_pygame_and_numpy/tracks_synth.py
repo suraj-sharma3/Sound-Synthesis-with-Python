@@ -17,7 +17,7 @@ def synth(frequency, duration=1.5, sampling_rate=44100):
 pg.init()
 pg.mixer.init()
 
-a_file = open("noteslist.txt")
+a_file = open(r"sound_synthesizer_with_pygame_and_numpy\noteslist.txt")
 file_contents = a_file.read(); a_file.close()
 noteslist = file_contents.splitlines()
 freq = 16.3516 #starting frequency
@@ -27,7 +27,7 @@ for i in range(len(noteslist)):
     freqs[noteslist[i]]= freq
     freq = freq * 2 ** (1/12)
 
-with open("SuperMario.txt", "r") as file:
+with open(r"sound_synthesizer_with_pygame_and_numpy\SuperMario.txt", "r") as file:
     notes = [eval(line.rstrip()) for line in file]
 file.close()
 

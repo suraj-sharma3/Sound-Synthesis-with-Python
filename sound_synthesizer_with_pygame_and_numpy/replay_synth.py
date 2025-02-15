@@ -21,7 +21,7 @@ font2 = pg.font.SysFont("Impact", 48)
 screen = pg.display.set_mode((1280, 720))
 pg.display.set_caption("FinFET Synth - replay txt" )
 
-a_file = open("noteslist.txt")
+a_file = open(r"sound_synthesizer_with_pygame_and_numpy\noteslist.txt")
 file_contents = a_file.read(); a_file.close()
 noteslist = file_contents.splitlines()
 keymod = '0-='
@@ -45,7 +45,7 @@ for i in range(len(noteslist)):
     screen.blit(font2.render(notes[key][4], 0, notes[key][3]), notes[key][2])
     pg.display.update()
 
-with open("SuperMario.txt", "r") as file:
+with open(r"sound_synthesizer_with_pygame_and_numpy\SuperMario.txt", "r") as file:
     keypresses = [eval(line.rstrip()) for line in file]
 file.close()
 
